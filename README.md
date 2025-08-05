@@ -1,4 +1,6 @@
+# Create a text file with instructions on how to run the Flask YouTube downloader app
 
+instructions = """
 How to Run the YouTube Video Downloader Flask App
 ==================================================
 
@@ -16,7 +18,7 @@ How to Run the YouTube Video Downloader Flask App
 2. (Optional but recommended) Create a virtual environment:
    For Windows:
        python -m venv venv
-       venv\Scripts\activate
+       venv\\Scripts\\activate
    For macOS/Linux:
        python3 -m venv venv
        source venv/bin/activate
@@ -43,3 +45,11 @@ How to Run the YouTube Video Downloader Flask App
 - If `index.html` is missing, the home page will not render. Make sure to include it in a `templates` folder.
 - Downloaded videos are saved temporarily in the `downloads` directory.
 - Ensure a stable internet connection during download.
+"""
+
+# Save to a text file
+file_path = "/mnt/data/How_to_Run.txt"
+with open(file_path, "w") as f:
+    f.write(instructions)
+
+file_path
